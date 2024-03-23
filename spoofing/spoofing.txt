@@ -1,1 +1,11 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+
+Unsafe code allowed attackers to steal login sessions and trick the system (CSRF). The fix:
+
+Protects session cookies from theft (marked httpOnly).
+Limits cookies to intended sites (using SameSite).
+Encrypts session data with a separate secret key.
+Spoofing attacks hurt data security (CIA triad):
+
+Confidentiality: Attackers can access private information by pretending to be someone else.
+Integrity: Attackers can tamper with data by sending fake messages that look legitimate.

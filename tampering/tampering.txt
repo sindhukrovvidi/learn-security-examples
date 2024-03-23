@@ -1,0 +1,11 @@
+System Weaknesses and Fixes
+
+Vulnerability: Weak spots in a system that attackers can use to break in, steal data, or mess things up.
+Secure Version: A safer way to build a system that plugs these holes. Here's how:
+Patches: Like fixing a leaky roof, these updates seal vulnerabilities found in older versions.
+Software Updates: Newer versions often have built-in protection against known weaknesses.
+Stronger Authentication: Making it harder for attackers to pretend to be someone they're not.
+Data Security: The CIA Triangle
+
+CIA stands for Confidentiality, Integrity, and Availability.
+Tampering Violates Integrity: When someone messes with data without permission, they're hurting its integrity. This makes the data unreliable and potentially incorrect.
