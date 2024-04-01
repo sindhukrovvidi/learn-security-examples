@@ -1,2 +1,9 @@
 - Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+
+The vulnerable code makes use of an ID obtained from the get request performed via userinfo. However, it lacks input sanitization and error handling, resulting in crashes when presented with incorrectly formatted IDs or regular expressions. This vulnerability occurs when input data is not properly checked.
+
+The secure version first checks if the provided ID matches an existing user. The secure code gracefully handles erroneous or badly formatted IDs by reporting the problem and preventing the program from crashing.
+
+
 - What additional security mechanisms can you incorporate to prevent such attacks?
+Additional security measures that could be implemented include sanitizing input data, avoiding direct use of sensitive identifiers such as IDs, implementing rate limiting to prevent flooding attacks, and using middleware for request management to avoid overwhelming the server with too many requests from a single user or address.

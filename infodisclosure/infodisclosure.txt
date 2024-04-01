@@ -1,3 +1,8 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+The vulnerability is that the programming allows malicious users to inject NoSQL code and extract information from the response. This vulnerability exists because the unsafe code does not sanitize the username input sent via the get request. The code returns a response indicating whether or not the server discovered the username, but fails to error out if the get request did. Secure code sanitizes input, uses a try-catch block for request responses, and checks usernames as strings to prevent pattern matching.
+
 Which CIA property does tampering violate?
+Information Disclosure violates the Confidentiality property.
+
 What additional security mechanisms can you incorporate?
+Backend management of URL format allows for the concealment of information within requests. This action prevents users from misusing the request URL format.

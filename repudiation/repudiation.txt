@@ -1,2 +1,5 @@
 - Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
+The insecure code enables users to impersonate others by manually inserting their IDs and sending messages without responsibility. Without proper logging and verification, users may be able to deny their actions or lie about their messages. The secure version logs all messages, including method type, URL, and sender's IP address, giving administrators with a clear audit trail to avoid repudiation.
+
 - What additional security mechanisms can you incorporate to prevent such attacks?
+To prevent attacks, we can use automated request logging libraries, flag questionable activity, and store log files securely in a database to prevent manipulation and assure auditability.

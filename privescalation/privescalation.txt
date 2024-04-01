@@ -1,0 +1,5 @@
+- Briefly explain the vulnerability and why the secure version prevents the vulnerability
+Insecure programming allows users to change another user's position through input manipulation, potentially leading to privilege escalation problems. The secure version maintains user IDs in sessions and checks for admin privileges before enabling role adjustments, avoiding unwanted changes and privilege manipulation.
+
+- What additional security mechanisms can you incorporate to prevent such attacks?
+To enhance security, consider using two-factor authentication and role-based privilege checks in code to avoid unauthorized changes and privilege escalation. These steps ensure that only authorized users with proper credentials can access privileged actions.
